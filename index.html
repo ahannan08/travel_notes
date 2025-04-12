@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pixabay Image Search</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <img src="assets/logo.jpeg" alt="Logo" class="logo" />
+    <h1 class="title">Travel Notes</h1>
+  </header>
+  
+  <!-- Search Bar -->
+  <form id="search-form">
+    <input type="text" id="search-input" placeholder="Search for images...">
+    <button type="submit">Search</button>
+    <button type="button" id="toggle-view">Toggle View</button>
+  </form>
+
+  <!-- Pagination -->
+  <div id="pagination"></div>
+
+  <!-- Main Layout -->
+  <div class="main-layout">
+    
+    <!-- Left Panel: Notes -->
+    <div class="left-panel">
+      <input type="text" id="note-title-input" placeholder="Enter note title" />
+      <textarea id="note-content-input" placeholder="Enter note content"></textarea>
+      <button id="add-note-btn">Add Note</button>
+      
+      <div id="note-list"></div>
+    </div>
+
+    <!-- Right Panel: Image Results -->
+    <div class="right-panel">
+      <div id="spinner"></div> <!-- Spinner for loading -->
+      <div id="results" class="grid"></div> <!-- Results container -->
+    </div>
+
+  </div>
+
+  <!-- App JS -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
